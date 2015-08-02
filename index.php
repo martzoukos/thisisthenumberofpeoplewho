@@ -35,7 +35,7 @@ $description = "Zero, zilch, zip, nil, nought, nothing, nada.";
     <meta name="theme-color" content="#ffffff">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="<?php echo $intro.$url_value; ?>" />
+    <meta property="og:title" content="This is the number of people who..." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="http://thisisthenumberofpeoplewho.com/" />
     <meta property="og:image" content="http://thisisthenumberofpeoplewho.com/og-image.png" />
