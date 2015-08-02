@@ -32,26 +32,33 @@ $intro = "This is the number of people who ";
 </head>
 <body>
 
-    <table class="the-table">
-      <tr>
-        <td class="the-aligner"> <!-- http://thisisthenumberofpeoplewho.com/give%20a%20fuck%20about%20this%20site's%20vertical%20alignment%20method -->
-          <h1 class="the-setup">
-            <?php echo $intro; ?>
-            <em class="the-emphasis"><?php echo $url_value; ?></em>
-          </h1>
-          <h2 class="the-zero">0</h2>
-        </td>
-      </tr>
-    </table>
+  <table class="the-table">
+    <tr>
+      <td class="the-aligner"> <!-- http://thisisthenumberofpeoplewho.com/give%20a%20fuck%20about%20this%20site's%20vertical%20alignment%20method -->
+        <h1 class="the-setup">
+          <?php echo $intro; ?>
+          <em class="the-emphasis"><?php echo $url_value; ?>:</em>
+        </h1>
+        <h2 class="the-zero">0</h2>
+      </td>
+    </tr>
+  </table>
 
+  <footer class="the-footnote">
+    Just write at the URL whatever you want to see in the pink text above
+    | 
+    Made by this <a href="http://twitter.com/martzoukos" target="_blank">cynical bastard</a>.
+  </footer>
 
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-    </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-65885712-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
   </body>
 </html>

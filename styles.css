@@ -54,9 +54,12 @@ body {
 }
 
 body {
-  background-color: black;
+  background-color: #030303;
   color: white;
   text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .the-table {
@@ -70,12 +73,6 @@ body {
   vertical-align: middle;
 }
 
-.the-setup {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-}
-
 .the-emphasis {
   color: pink;
 }
@@ -84,4 +81,33 @@ body {
   font-size: 200px;
   font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';
   margin-top: 20px;
+  line-height: 1em;
+}
+
+@media (min-width: 480px) {
+  .the-zero {
+    font-size: 300px;
+  }
+}
+
+.the-footnote {
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+}
+
+@media (min-height: 400px) {
+  .the-footnote {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    text-align: center;
+  }
+}
+
+.the-footnote a {
+  color: grey;
+}
+.the-footnote a:hover {
+  color: pink;
 }
