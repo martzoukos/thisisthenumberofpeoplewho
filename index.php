@@ -1,6 +1,8 @@
 <?php 
 $url_value = str_replace("/", "", urldecode($_SERVER['REQUEST_URI'] ) );
 $intro = "This is the number of people who ";
+
+$description = "Zero, zilch, zip, nil, nought, nothing, nada.";
 ?>
 
 <!doctype html>
@@ -9,8 +11,10 @@ $intro = "This is the number of people who ";
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php echo $intro.$url_value; ?></title>
-    <meta name="description" content="<?php echo $intro.$url_value; ?>">
+    <meta name="description" content="<?php echo $intro.$url_value.' - '.$description; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -28,6 +32,14 @@ $intro = "This is the number of people who ";
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="<?php echo $intro.$url_value; ?>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://thisisthenumberofpeoplewho.com/" />
+    <meta property="og:image" content="http://thisisthenumberofpeoplewho.com/og-image.png" />
+    <meta property="og:description" content="Zero, zilch, zip, nil, nought, nothing, nada." />
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
