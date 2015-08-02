@@ -1,5 +1,6 @@
 <?php 
 $url_value = str_replace("/", "", urldecode($_SERVER['REQUEST_URI'] ) );
+$url_value = ($url_value == '' ? 'find this site useful' : $url_value);
 $intro = "This is the number of people who ";
 
 $description = "Zero, zilch, zip, nil, nought, nothing, nada.";
@@ -49,7 +50,7 @@ $description = "Zero, zilch, zip, nil, nought, nothing, nada.";
       <td class="the-aligner"> <!-- http://thisisthenumberofpeoplewho.com/give%20a%20fuck%20about%20this%20site's%20vertical%20alignment%20method -->
         <h1 class="the-setup">
           <?php echo $intro; ?>
-          <em class="the-emphasis"><?php echo $url_value; ?>:</em>
+          <em class="the-emphasis"><?php echo $url_value; ?></em>:
         </h1>
         <h2 class="the-zero">0</h2>
       </td>
